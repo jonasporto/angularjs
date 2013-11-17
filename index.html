@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app ng-controller="TesteCtrl">
 	<head>
 		<title>Angular Js</title>
+		<meta charset="utf-8">
 	</head>
 	<body>
 
 		<h1>Tutorial Angular JS</h1>
 
 		<form id="form_produtos">
-			<input type="hidden" id="txtId" name="id" value="0">
+			<input type="hidden" id="txtId" name="id" value="0" ng-model="unidade.id">
 			<label for="txtTitle"> Title</label>
-			<input type="text" id="txtTitle" name="title">
+			<input type="text" id="txtTitle" name="title" ng-model="unidade.title">
 			<label for="txtCategory"> Category</label>
-			<input type="text" id="txtCategory" name="category">
+			<input type="text" id="txtCategory" name="category" ng-model="unidade.category">
 			<label for="txtTGoogleID">Google ID</label>
-			<input type="text" id="txtGoogleID" name="google_id">
-			<input type="submit" id="btnSalvarProduto" value="Salvar Produto">
+			<input type="text" id="txtGoogleID" name="google_id" ng-model="unidade.google_id">
+			<input type="submit" id="btnSalvarProduto" value="Salvar Produto" ng-click="salvar()">
 		</form>
 
 
