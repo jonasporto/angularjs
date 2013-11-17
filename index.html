@@ -33,12 +33,12 @@
 			</thead>
 
 			<tbody>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+				<tr ng-repeat="un in lista">
+					<td>{{un.id}}</td>
+					<td>{{un.title}}</td>
+					<td>{{un.category}}</td>
+					<td>{{un.google_id}}</td>
+					<td>[ <a href="#" ng-click="editar(un)">editar</a> |<a href="#" ng-click="excluir(un)"> excluir</a> ]</td>
 			</tbody>
 		</table>	
 
